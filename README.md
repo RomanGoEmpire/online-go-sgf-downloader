@@ -1,4 +1,4 @@
-# 📦 TEMPLATE 📦
+# Online Go SGF Downloader
 
 
 ### Setup
