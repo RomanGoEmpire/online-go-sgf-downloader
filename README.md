@@ -1,5 +1,15 @@
 # Online Go SGF Downloader
 
+Downloads SGF or PNG of games on [OGS](online-go.com).
+
+To start the programm:
+```shell
+python main.py
+```
+
+Edit te code in `main.py` to get a specific game or multiple games. 
+
+Downloaded items will be stored in `/data`
 
 ### Setup
 
