@@ -1,4 +1,3 @@
-python-dotenv
-pytest
-
 requests
+python-dotenv
+sgfmill
