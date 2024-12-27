@@ -113,7 +113,7 @@ def main() -> None:
     load_dotenv()
     os.makedirs("logs", exist_ok=True)
     logging.basicConfig(
-        filename=f'logs/{datetime.now().strftime("%Y-%m-%d %H:%M")}.log',
+        filename=f'logs/{datetime.now().strftime("%Y-%m-%d")}.log',
         level=logging.INFO,
         format='%(asctime)s - %(levelname)s - %(message)s',
         datefmt='%Y-%m-%d %H:%M:%S'
