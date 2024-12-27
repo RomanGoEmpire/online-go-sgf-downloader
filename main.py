@@ -41,7 +41,9 @@ def save_to_db(game_id: int, sgf_string: str) -> None:
     game = sgf.Sgf_game.from_string(sgf_string)
     root = game.root
     name = safe_get(root, "GN")
-    date = f"{datetime.strptime(safe_get(root, "DT"), "%Y-%m-%d").isoformat()}Z"
+    extracted_date = safe_get(root, "DT")
+    date = f"{datetime.strptime(extracted_date, "%Y-%m-%d").isoformat()}Z" if extracted_date else None
+
     size = game.get_size()
     komi = game.get_komi()
     rules = safe_get(root, "RU")
